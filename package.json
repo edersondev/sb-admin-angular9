@@ -1,10 +1,14 @@
 {
-  "name": "sb-admin-bs4-angular-8",
+  "name": "sb-admin-bs4-angular-9",
   "version": "8.0.0",
   "license": "Apache",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start-docker": "ng serve --host 0.0.0.0 --port 4200",
+    "cache": "npm cache clear --force && rm -rf ~/.npm/*",
+    "delete": "rm -rf node_modules && npm run cache && rm -rf package-lock.json",
+    "clean-install": "npm run delete && npm install --verbose",
     "build": "ng build --prod",
     "gitbuild": "ng build --prod --base-href /start-angular/SB-Admin-BS4-Angular-7/master/dist/",
     "test": "ng test",
