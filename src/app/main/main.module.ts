@@ -16,7 +16,6 @@ import { HeaderComponent } from '../layout/components/header/header.component';
   imports: [
     CommonModule,
     MainRoutingModule,
-    //LayoutModule,
     TranslateModule,
     NgbDropdownModule
   ]
