@@ -1,8 +1,8 @@
-# SB Admin rewritten in Angular 10 and Bootstrap 4
+# SB Admin rewritten in Angular 11 and Bootstrap 4
 
-Simple Dashboard Admin App built using Angular 10 and Bootstrap 4
+Simple Dashboard Admin App built using Angular 11 and Bootstrap 4
 
-This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v8.0](http://startbootstrap.com/template-overviews/sb-admin-2/) to Angular9 Theme.
+This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v8.0](http://startbootstrap.com/template-overviews/sb-admin-2/) to Angular11 Theme.
 
 Powered by [StartAngular](http://startangular.com/) & [StrapUI](http://strapui.com/)
 
@@ -10,7 +10,7 @@ Powered by [StartAngular](http://startangular.com/) & [StrapUI](http://strapui.c
 
 ## [SB Admin Material version](https://github.com/start-javascript/sb-admin-material)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
 
 ### Introduction
 
@@ -18,10 +18,10 @@ Provides fast, reliable and extensible starter for the development of Angular pr
 
 `sb-admin-bs4-angular` provides the following features:
 
-*   Developed using boostrap-v7.0.0
-*   angular-v10.0.7
-*   angular/cli-v10.0.7
-*   [ng-bootstrap-v7.0.0](https://github.com/ng-bootstrap/)
+*   Developed using boostrap-v9.1.10
+*   angular-v11.2.7
+*   angular/cli-v11.2.7
+*   [ng-bootstrap-v9.1.10](https://github.com/ng-bootstrap/)
 *   [ngx-translate-v13.0.0](https://github.com/ngx-translate)
 *   Following the best practices.
 *   Ahead-of-Time compilation support.
@@ -32,6 +32,8 @@ Provides fast, reliable and extensible starter for the development of Angular pr
 ### How to start
 
 **Note** that this seed project requires **node >=v8.9.0 and npm >=4**.
+
+**Note** charts packages to "ng2-charts": "^2.3.0" and "chart.js": "^2.9.3"
 
 In order to start the project use:
 
