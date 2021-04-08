@@ -10,12 +10,11 @@ export abstract class ResourceService<T> {
   sufixUrl:string;
 
   constructor(
-    private _httpClient: HttpClient,
-    private _dialog?: DialogService
+    private _httpClient: HttpClient
   ) { }
 
   /**
-   * Definição das variaveis endpoint e sufixUfl
+   * Definition of endpoint and sufixUrl variables
    */
   abstract setEndPoint(endpoint: string,sufixUrl?:string): void;
   
