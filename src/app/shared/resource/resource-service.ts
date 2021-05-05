@@ -31,7 +31,7 @@ export abstract class ResourceService<T> {
     const options = {
       params: new HttpParams({fromObject:objParams})
     };
-    return this.httpClient.get<T>(urlRest,options)
+    return this._httpClient.get<T>(urlRest,options)
       .pipe(
         catchError(this.handleError)
       );
@@ -39,7 +39,7 @@ export abstract class ResourceService<T> {
 
   find(id:number):Observable<T>{
     let urlRest = this.getUrlRequest();
-    return this.httpClient.get<T>(`${urlRest}/${id}`)
+    return this._httpClient.get<T>(`${urlRest}/${id}`)
     .pipe(
       catchError(this.handleError)
     );
@@ -47,7 +47,7 @@ export abstract class ResourceService<T> {
 
   create(dataPost:any):Observable<T>{
     let urlRest = this.getUrlRequest();
-    return this.httpClient.post<T>(urlRest,dataPost)
+    return this._httpClient.post<T>(urlRest,dataPost)
     .pipe(
       catchError(this.handleError)
     );
@@ -55,7 +55,7 @@ export abstract class ResourceService<T> {
 
   update(id:number,dataPost:any):Observable<T>{
     let urlRest = this.getUrlRequest();
-    return this.httpClient.put<T>(`${urlRest}/${id}`,dataPost)
+    return this._httpClient.put<T>(`${urlRest}/${id}`,dataPost)
     .pipe(
       catchError(this.handleError)
     );
@@ -64,12 +64,12 @@ export abstract class ResourceService<T> {
   createOrUpdate(dataPost:any, id?:number):Observable<T>{
     let urlRest = this.getUrlRequest();
     if(id === undefined){
-      return this.httpClient.post<T>(urlRest,dataPost)
+      return this._httpClient.post<T>(urlRest,dataPost)
       .pipe(
         catchError(this.handleError)
       );
     }
-    return this.httpClient.put<T>(`${urlRest}/${id}`,dataPost)
+    return this._httpClient.put<T>(`${urlRest}/${id}`,dataPost)
     .pipe(
       catchError(this.handleError)
     );
@@ -77,7 +77,7 @@ export abstract class ResourceService<T> {
 
   delete(id:number):Observable<T>{
     let urlRest = this.getUrlRequest();
-    return this.httpClient.delete<T>(`${urlRest}/${id}`)
+    return this._httpClient.delete<T>(`${urlRest}/${id}`)
     .pipe(
       catchError(this.handleError)
     );
